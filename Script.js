@@ -11,7 +11,11 @@ function generatePasswordOptions() {
 
   var length = prompt("enter length of your password between 8 & 128 characters");
   console.log(length)
-  // todo: if characters is less than 8 or more than 128, error message (alert) is needed
+
+  if (length < 8 || length > 128) {
+    alert("choose pass between 8 & 128 chars");
+   return;
+  }
 
   var hasSpecialCharacters = confirm("Do you want special characters? then click ok")
   console.log(hasSpecialCharacters)
@@ -26,6 +30,10 @@ function generatePasswordOptions() {
   console.log(hasUppercaseLetters)
   //  todo: if everything is canceled (false), one needs to be set as true
 
+  if (hasSpecialCharacters, hasNumbers, hasLowercaseLetters, hasUppercaseLetters == false) {
+    alert("one must be selected to work.");
+    return;
+  }
   var passwordOptions = {
     Length: length,
     hasSpecialCharacters: hasSpecialCharacters,
