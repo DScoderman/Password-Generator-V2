@@ -33,3 +33,5 @@ Currently using the MIT license.
 ## Additional Notes
 
 Link to repo: https://github.com/DScoderman/Password-Generator-V2
+
+Link to deployed site: https://dscoderman.github.io/Password-Generator-V2/
