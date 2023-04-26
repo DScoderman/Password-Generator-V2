@@ -28,7 +28,7 @@ function generatePasswordOptions() {
 
   var hasUppercaseLetters = confirm("do you want uppercase letters? then click ok")
   console.log(hasUppercaseLetters)
-  //  todo: if everything is canceled (false), one needs to be set as true
+ 
 
   if (hasSpecialCharacters, hasNumbers, hasLowercaseLetters, hasUppercaseLetters == false) {
     alert("one must be selected to work.");
